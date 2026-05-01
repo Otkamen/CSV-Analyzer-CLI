@@ -18,7 +18,7 @@ A lightweight command-line tool for analyzing CSV files — no GUI, no Excel, ju
 ## Installation
 
 ```bash
-git clone https://github.com/Otkamen/CSV-Analyzer-CLI.git
+git clone https://github.com/Otkaman/CSV-Analyzer-CLI.git
 cd CSV-Analyzer-CLI
 ```
 
@@ -103,7 +103,7 @@ CSV-Analyzer-CLI/
 ## Установка
 
 ```bash
-git clone https://github.com/Otkamen/CSV-Analyzer-CLI.git
+git clone https://github.com/Otkaman/CSV-Analyzer-CLI.git
 cd CSV-Analyzer-CLI
 ```
 
