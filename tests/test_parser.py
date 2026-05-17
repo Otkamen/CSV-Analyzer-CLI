@@ -12,13 +12,13 @@ def test_wrong_extension(tmp_path):
     test_file = tmp_path / "test.txt"
 
     with pytest.raises(ParseError):
-        readFile(str(test_file))
+        readFile(test_file)
 
 
 def test_wrong_column(exist):
     with pytest.raises(ColumnNotFoundError):
-        readFile(str(exist), column='price')
+        readFile(exist, column='price')
 
 
 def test_returns_list(exist):
-    assert readFile(str(exist)) == ['3', '7', '6']
+    assert readFile(exist) == ['3', '7', '6']
