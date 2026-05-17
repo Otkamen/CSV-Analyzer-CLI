@@ -85,6 +85,10 @@ CSV-Analyzer-CLI/
 
 - Python 3.10+
 
+## Test coverage
+
+- Current test coverage: **76%**
+
 ---
 
 <a name="russian"></a>
@@ -165,6 +169,10 @@ CSV-Analyzer-CLI/
 | `FileNotFoundError` | CSV файл не существует |
 | `ParseError` | Файл не является `.csv` |
 | `ColumnNotFoundError` | Указанная колонка не найдена в CSV |
+
+## Покрытие тестами
+
+- Текущее покрытие тестами: **76%**
 
 ## Требования
 
