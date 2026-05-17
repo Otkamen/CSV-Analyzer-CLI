@@ -10,7 +10,7 @@ def test_file_not_found():
 
 def test_wrong_extension(tmp_path):
     test_file = tmp_path / "test.txt"
-
+    test_file.write_text("data")
     with pytest.raises(ParseError):
         readFile(test_file)
 
