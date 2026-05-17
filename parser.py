@@ -1,14 +1,17 @@
 import csv
+from pathlib import Path
 from exceptions import ParseError, ColumnNotFoundError
 
 
-def readFile(file: str, column: str = 'category') -> list[str]:
+def readFile(file: str | Path, column: str = 'category') -> list[str]:
+    file = Path(file)
     result = []
-    if not file.endswith('.csv'):
+
+    if file.suffix != '.csv':
         raise ParseError('File must be .csv')
 
     try:
-        with open(file, 'r') as old:
+        with file.open('r', encoding='utf-8') as old:
             reader = csv.DictReader(old)
             if column not in reader.fieldnames:
                 raise ColumnNotFoundError(f"'{column}' not in file")
