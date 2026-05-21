@@ -1,6 +1,6 @@
 FROM python:3.14-slim
 WORKDIR /app
-COPY requerments.txt .
-RUN pip install -r requerments.txt
+COPY requirements.txt .
+RUN pip install -r requirements.txt
 COPY . .
 CMD ["python","main.py"]
